@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Fashion Boutique Collection Management System | Zaid Khan | B.Tech CSE | Lovely Professional University | Subject: HTML -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fashion Boutique Collection Management System</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Sidebar navigation (links use #hash, script.js shows the matching page) -->
+<aside id="sidebar">
+  <div class="brand"><span id="logo" class="logo"></span><b id="bname"></b></div>
+  <nav>
+    <a href="#dashboard" data-p="dashboard">▦ Dashboard</a>
+    <a href="#products" data-p="products">👗 Products</a>
+    <a href="#collections" data-p="collections">❖ Collections</a>
+    <a href="#variants" data-p="variants">◧ Variants</a>
+    <a href="#inventory" data-p="inventory">▤ Inventory</a>
+    <a href="#customers" data-p="customers">♡ Customer Interest</a>
+    <a href="#settings" data-p="settings">⚙ Settings</a>
+  </nav>
+  <div class="foot">Zaid Khan<br>B.Tech CSE, Lovely Professional University</div>
+</aside>
+
+<main>
+  <header class="top">
+    <button id="menu" class="btn ghost" aria-label="Open menu">☰</button>
+    <h1 id="title"></h1>
+    <a href="#inventory" class="btn ghost" id="bell">🔔 Stock alerts <span id="alerts" class="pill"></span></a>
+    <span class="avatar" title="Zaid Khan">ZK</span>
+  </header>
+  <div id="view"></div>
+</main>
+
+<!-- Popup used for every add/edit form -->
+<div id="modal" class="modal hidden"><div class="box"><h2 id="mtitle"></h2><form id="mform" novalidate></form></div></div>
+<div id="toast"></div>
+<div id="report"></div>
+<script src="script.js"></script>
+</body>
+</html>
